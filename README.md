@@ -1,4 +1,4 @@
-dwm - dynamic window manager (the sunfish fork)
+dwm - dynamic window manager (the limnwiki build)
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
