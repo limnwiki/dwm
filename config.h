@@ -90,7 +90,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	// { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -105,7 +105,8 @@ static const Key keys[] = {
 	{ MODKEY,			            XK_w,	   spawn,		{.v = (const char*[]){ "brave", NULL } } },
 	{ MODKEY|ShiftMask,			    XK_w,	   spawn,		{.v = (const char*[]){ "brave", "--incognito" } } },
 	{ MODKEY,			            XK_d,	   spawn,       {.v = (const char*[]){ "dmenu_run", NULL } } },
-	{ MODKEY,                       XK_period, spawn,       {.v = (const char*[]){ "gnome-characters", NULL } } },
+	{ MODKEY,                       XK_period, spawn,       {.v = (const char*[]){ "emojis", NULL } } },
+	{ MODKEY|ShiftMask,                       XK_period, spawn,       {.v = (const char*[]){ "gnome-characters", NULL } } },
 	{ MODKEY,                       XK_p,      spawn,       {.v = (const char*[]){ "openncspot", NULL } } },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,       {.v = (const char*[]){ "spotify_web", NULL } } },
 	{ MODKEY,						XK_c,      spawn,     	{.v = (const char*[]){ "codium", NULL } } },
