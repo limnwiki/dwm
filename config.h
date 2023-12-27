@@ -33,7 +33,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	*/
 	/* class    instance      title       	 tags mask    isfloating   isterminal  noswallow  monitor */
-	{ "Gimp",     NULL,       NULL,       	    1 << 8,       0,           0,         0,        -1 },
+	// { "Gimp",     NULL,       NULL,       	    1 << 8,       0,           0,         0,        -1 },
+	{ "mpv",     NULL,       NULL,       	1 << 1,       0,           0,         0,        0 },
 	{ "Alacritty",  NULL,       NULL,       	    0,            0,           1,         0,        -1 },
 	{ NULL,       NULL,       "Event Tester",   0,            0,           0,         1,        -1 },
 };
@@ -108,7 +109,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, spawn,       {.v = (const char*[]){ "emojis", NULL } } },
 	{ MODKEY|ShiftMask,                       XK_period, spawn,       {.v = (const char*[]){ "gnome-characters", NULL } } },
 	{ MODKEY,                       XK_p,      spawn,       {.v = (const char*[]){ "openncspot", NULL } } },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,       {.v = (const char*[]){ "spotify_web", NULL } } },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,       {.v = (const char*[]){ "spotify", NULL } } },
 	{ MODKEY,						XK_c,      spawn,     	{.v = (const char*[]){ "codium", NULL } } },
 	{ MODKEY,       				XK_z,      spawn,     	{.v = (const char*[]){ "openlf", NULL } } },
 	{ MODKEY|ShiftMask,				XK_z,      spawn,     	{.v = (const char*[]){ "thunar", NULL } } },
